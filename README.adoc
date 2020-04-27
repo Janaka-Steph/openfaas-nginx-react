@@ -1,0 +1,11 @@
+= ReactJS SPA on OpenFaaS
+
+Based on OpenFaaS Dockerfile template, serving the app with Nginx:
+https://github.com/alexellis/static-site-template
+
+
+.In one tab
+ kubectl port-forward svc/gateway -n openfaas 8080:8080
+
+.In a other tab
+ faas up

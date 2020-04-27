@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: local('Dancing Script'), local('DancingScript-Regular');
+  src: url('./assets/fonts/Dancing_Script/DancingScript-Regular.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Dancing Script';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
