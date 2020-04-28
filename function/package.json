@@ -1,25 +1,12 @@
 {
-  "name": "openfaas-nginx-react",
+  "name": "openfaas-react",
   "version": "0.1.0",
-  "//proxy": "http://localhost:8080",
-  "//homepage": "http://127.0.0.1:8080/function/openfaas-nginx-react",
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
     "test": "CI=true react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "watch": "cra-build-watch -p /function/openfaas-react/ -b /usr/share/nginx/html --react-scripts-version 3.4.0"
   },
   "browserslist": {
     "production": [
@@ -32,5 +19,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0"
+  },
+  "devDependencies": {
+    "cra-build-watch": "^3.2.0"
   }
 }

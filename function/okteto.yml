@@ -1,0 +1,14 @@
+name: openfaas-react
+#image: registry.cloud.okteto.net/janaka-steph/openfaas-react
+image: janakasteph/openfaas-react:dev
+labels:
+  faas_function: openfaas-react
+command:
+  - sh
+workdir: /home/app
+mountpath: /home/app/function
+persistentVolume:
+  enabled: true
+environment:
+  #- PUBLIC_URL=https://openfaas-ingress-janaka-steph.cloud.okteto.net/function/openfaas-react
+  - PUBLIC_URL=/function/openfaas-react

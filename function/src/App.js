@@ -8,12 +8,9 @@ import {
 } from "react-router-dom";
 import pokemon from './assets/img/pokemon.jpg'
 
-console.log('process.env.PUBLIC_URL', process.env.PUBLIC_URL)
-console.log('process.env.REACT_APP_BASENAME', process.env.REACT_APP_BASENAME)
-
 function App() {
   return (
-    <Router basename={process.env.REACT_APP_BASENAME}>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <ul>
           <li>
